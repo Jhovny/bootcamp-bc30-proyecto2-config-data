@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: 8085
 
 eureka:
   client:
@@ -8,11 +8,11 @@ eureka:
   instance:
     hostname: localhost
     preferIpAddress: true
-
+    
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/db_bank_client
+      uri: mongodb://localhost:27017/db_bank_master
       
 management:
   endpoint:
