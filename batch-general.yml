@@ -9,6 +9,10 @@ eureka:
     hostname: localhost
     preferIpAddress: true
 
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/db_bank_client
       
 management:
   endpoint:
