@@ -31,3 +31,7 @@ spring:
           uri: lb://banking
           predicates:
             - Path=/api/accounts/**, /api/accountstates/**, /api/holders/**, /api/movements/**, /api/movementtypes/**, /api/signers/**
+        - id: notification
+          uri: lb://notification
+          predicates:
+            - Path=/api/email-notify/**, /api/acountopen-notify/**
